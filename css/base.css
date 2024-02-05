@@ -1,0 +1,241 @@
+/* Configurações para tags em geral */
+*{
+    font-family:sans-serif;
+    margin: 0px;
+    font-size:1em;
+}
+@media (orientation:portrait){
+    *{
+      font-size:0.95em;
+    }
+}
+
+main{
+    flex-grow: 1;
+}
+body{
+    background-color: rgb(255,255,255) !important;
+    /*background-image:url("https://as2.ftcdn.net/v2/jpg/02/39/95/17/1000_F_239951732_qY8GwJ4gurolWqIdyL15BH4zDfCPAfAr.jpg");*/
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    min-height: 100vh;
+    color:black !important;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+  font-size:2em;
+}
+h2{
+  font-size:1.5em;
+}
+a{
+  color:black;
+}
+footer{
+    text-align:center;
+    color:#aaa;
+    width:100%;
+}
+
+
+
+/* Configuração dos inputs para pesquisa presentes nas páginas index e pesquisa */
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+#logo{
+  height:100px;
+  width:100px;
+  border-radius: 100px;
+  /*animation: rotation 2s linear infinite;*/
+}
+#pesquisa-container{
+  border-radius: 0px 0px 20px 20px;
+  background-color: rgb(173, 173, 173) !important;
+  display:inline-block;
+  width:100%;
+}
+#pesquisa{
+  width: 65%;
+  z-index: 100;
+  border-radius: 100px;
+  outline: none;
+  color:#000 !important;
+  text-indent: 15px;
+  display:inline-block;
+  border-style: hidden;
+  border-color: rgb(10, 8, 8);
+  background-color: rgb(173, 173, 173) !important;
+}
+#tipo_pesquisa{
+  border-radius: 10px;
+  width: 25%;
+  display:inline-block;
+  outline: none;
+  border-style: hidden;
+  margin:0px;
+  text-align: right;
+  background-color: rgb(173, 173, 173) !important;
+  color:#0008ff;
+}
+#search{
+  background-color:#0008ff;
+  border-style: hidden;
+  color:rgb(251,212,162);
+  display: inline-block;
+  width:20%;
+  z-index:10;
+  min-width:20vw;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+@media (orientation:portrait){
+  #search{
+    width: 50%;
+    margin: auto;
+    margin-top:10px;
+  }
+}
+#search_container{
+  width: 70%;
+  margin: auto;
+}
+@media (orientation:portrait){
+  #search_container{
+    width:90%;
+  }
+}
+#titulo_site{
+  font-weight: bold;
+  font-size: 5vw;
+  color:white !important;
+  text-shadow: 5px 5px #000;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50vh;
+}  
+@media (orientation:portrait){
+  #titulo_site{font-size: 10vw};
+}
+#banner{
+  padding:1vw;
+  border-radius: 20px 20px 0px 0px;
+  /*background-image: url("https://i.pinimg.com/originals/a2/4c/b5/a24cb568fa40046f8562dbc45cea8506.gif");*/
+  /*background-image: url("https://thumbs.gfycat.com/AcidicInfamousDipper-size_restricted.gif");*/
+  /*background-image: url("https://media.tenor.com/TuYN6dmAclUAAAAd/cyberpunk.gif");*/
+  /*background-image: url("https://i.pinimg.com/originals/19/b2/30/19b230e111411674a0dd419f64d88285.gif");*/
+  background-image: url("https://www.lukeasa.com/GIF/GIS/GIS95-06.gif");
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  height:50vh;
+}
+#inputs{
+  margin:auto;
+  display:block;
+  width:100%;
+  z-index:10;
+}
+@media (orientation:landscape){
+  #inputs{width:60%};
+}
+
+
+
+
+
+/* configuração da navbar e sidebar*/
+#logo_nav{
+  width:30px;
+  height:30px;
+  margin-right:10px;
+  border-radius: 200px;
+}
+#sidebar{
+  width: 280px;
+  position:fixed;
+  z-index: 200;
+  height:100%;
+  background-color: rgb(240,240,240);
+  visibility: hidden;
+}
+.nav-link{
+    color:black;
+}
+
+
+
+
+/* configuração do icone de modo noturno */
+.night_mode{
+  background-color: rgb(50,50,50)!important;
+  color:white!important;
+}
+#n_mode_S{
+  margin-left:20px;
+}
+#n_mode_S:hover {
+  cursor: pointer;
+}
+#n_mode:hover {
+  cursor: pointer;
+}
+
+
+
+
+/* configuração do widget item que é usado nas páginas pesquisa e recomendações */
+.cover{
+  height:160px;
+  width:120px;
+  border-radius: 10px;
+}
+.item{
+  display:inline-block;
+  margin:10px;
+  width:120px;
+}
+.item:hover {
+  cursor: pointer;
+}
+.default_img{
+  background-image:url("https://islandpress.org/sites/default/files/default_book_cover_2015.jpg");
+  background-size: cover;
+  height:160px;
+  width:120px;
+  border-radius: 10px;
+}
+.titulo{
+  margin-top: 10px;
+  display: inline-flex;
+  text-align: center;
+  overflow: hidden;
+  max-height: 100px;
+  z-index: 100;
+}
+.titulo:hover{
+  margin-top: 10px;
+  display: inline-flex;
+  text-align: center;
+  overflow:initial;
+}
+
+
+
+
+/* container para os widgets item */
+#lista{
+  margin:auto;
+  margin-top: 14vh;
+  text-align: center;
+}
+@media (orientation:landscape){
+  #lista{width:60%};
+}

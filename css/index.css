@@ -1,0 +1,24 @@
+/* configurações para tags em geral */
+input{
+    height:40px;
+    display:inline-block;
+}
+
+footer{
+    position:fixed !important;
+    left:0px !important;
+    bottom:0px !important;
+}
+
+
+
+/* configuração dos objetos da barra de pesquisa */
+#search_bar{
+    width:100%;
+    z-index:10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}

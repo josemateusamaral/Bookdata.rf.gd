@@ -1,0 +1,66 @@
+/* configuração de tags em geral */
+h2{
+  margin-top:10vh;
+}
+main{
+  margin-top:5%;
+}
+
+
+
+/* configuração do texto da biografia do autor*/
+#biografia{
+  margin-bottom:10%;
+  text-align:justify;
+}
+
+
+
+/* configuração do nome do autor*/
+#nome_do_autor{
+    text-align:center;
+    margin-top:20vh;
+}
+@media (orientation:portrait){
+  #nome_do_autor{
+    margin-top:5vh;
+  }
+}
+
+
+
+/* configuração do container das informações como biografias, data de nascimento, nome do autor e etc... */
+#informacoes{
+    margin-left:6%;
+    width:50%;
+    display:inline-block;
+}
+@media (orientation:portrait){
+  #informacoes{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+  }
+}
+
+
+
+/* Configuração da foto do autor */
+#foto_autor{
+  margin-top:10vh;
+  margin-left:13vw;
+  width: 200px;
+  height: 200px;
+  display:inline-block;
+  border-radius: 10px;
+}
+@media (orientation:portrait){
+  #foto_autor{
+    margin-top: 10vh;
+    display:block;
+    position:relative;
+    left:50%;
+    margin-left:-100px;
+    
+  }
+}

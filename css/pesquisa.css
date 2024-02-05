@@ -1,0 +1,61 @@
+/* Configurar os objetos da barra de pesquisa */
+#logo{
+    height:100px;
+    width:100px;
+}
+#search_bar{
+    margin-top: 20vh;
+    text-align: center;
+    z-index:10;
+}
+#titulo_filtros{
+  display:inline;
+  vertical-align:top;
+  font-weight: bold;
+}
+.filtros{
+    color:#000;
+}
+
+#pesquisa{
+  padding:10px;
+}
+#search{
+    padding:10px;
+}
+
+
+
+
+
+/* lista que contem os Widgets item*/
+#lista{
+    margin:auto;
+    margin-top: 20px;
+    text-align: center;
+}
+@media (orientation:landscape){
+    #lista{width:60%};
+}
+
+
+
+/* gif de loading para esperar o resultado da request*/
+#loading{
+    position:relative;
+    left:50%;
+    margin-left:-150px;
+    height:300px;
+    width:300px;
+    display:none;
+}
+
+
+
+/* texto informando que não foram encontrados nenhum resultado*/
+.sem_resultados{
+    font-weight: bold;
+    color:#aaa;
+    margin-left:10px;
+    margin-right:10px;
+}
